@@ -1,0 +1,127 @@
+.mainContainer {
+    width: 450px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    font-size: 1.3em;
+    animation: moveTaskAnimation 0.3s ease; /* Animation for task movement */
+}
+
+@keyframes moveTaskAnimation {
+    0% {
+        transform: translateY(0); /* Initial position */
+    }
+    50% {
+        transform: translateY(-5px); /* Move up slightly */
+    }
+    100% {
+        transform: translateY(0); /* Return to initial position */
+    }
+}
+
+/* Rest of your existing styles remain unchanged */
+
+
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.addContainer input {
+    flex: 1;
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.addTask {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.addTask:hover {
+    background-color: #0056b3;
+}
+
+ol {
+    list-style: none;
+    padding: 0;
+}
+
+ol li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+ol li:hover {
+    background-color: #f0f0f0;
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+}
+
+.buttonContainer button {
+    margin-left: 5px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #dc3545;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttonContainer button.moveButton {
+    background-color: #28a745;
+}
+
+.buttonContainer button:hover {
+    background-color: #c82333;
+}
+
+.buttonContainer button.moveButton:hover {
+    background-color: #218838;
+}
+
+/* Animation for list item */
+@keyframes moveAnimation {
+    0% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.moveAnimation {
+    animation: moveAnimation 0.5s ease;
+}
